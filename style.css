@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(125, 120, 123);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.calendar {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;   
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(183, 177, 177, 0.2);
+    overflow: hidden;
+}
+
+.month-header {
+    background-color: rgb(11, 11, 11);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table td {
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.table td.today {
+    background-color: #ffeb3b;
+    font-weight: bold;
+}
+
+.table td:hover {
+    background-color: #1f7007;
+    color: white;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 14px;  
+  border-top: 2px solid #ccc;
+}
